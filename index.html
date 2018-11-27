@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title, Description-->
+    <title>Alexey Komkov - Marketing Specialist</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS, fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-colors.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+    <body>
+
+      <!-- main section -->
+      <div class="row">
+        <div class="main">
+
+          <!-- profile section -->
+          <div class="col col--6-of-12">
+            <!-- profile -->
+            <div class="profile-section">
+
+              <div class="profile-pic">
+                <!-- ### change profile pic here -->
+                <img src="img/profile-pic.png" alt="">
+              </div><!-- end profile-pic -->
+
+              <div class="background color-theme-default" style="z-index: -10"></div>
+              <!-- end background -->
+
+            </div><!-- end profile-section -->
+          </div><!-- end col -->
+
+          <!-- about section -->
+          <div class="col col--6-of-12 col-second">
+            <div class="about-section">
+              <div class="aboutme">
+                <!-- Intro Lines -->
+                <p>Hello, My Name is</p>
+                <!-- Name -->
+                <h1>Alexey Komkov</h1>
+                <!-- Profile -->
+                <h3>Marketing Specialist</h3>
+
+                <div class="btn-group">
+                  <!-- download resume -->
+                  <a href="https://www.facebook.com/alexey.komkov.5" class="color-theme-default" download>Get in Touch</a>
+                  <!-- hire me add email here -->
+                  <a class="border">Porfolio</a>
+                </div>
+
+                <div class="social-media">
+                  <li><a href="https://twitter.com/iDa4ne"><i class="icon-twitter twitter"></i></a></li>
+                  <!--<li><a href="#"><i class="icon-dribbble dribbble"></i></a></li>-->
+                  <li><a href="https://www.instagram.com/alexey_komkov/"><i class="icon-instagram insta"></i></a></li>
+                  <!--<li><a href="#"><i class="icon-behance behance"></i></a></li>-->
+                  <li><a href="https://www.facebook.com/alexey.komkov.5"><i class="icon-facebook fb"></i></a></li>
+                  <!--<li><a href="#"><i class="icon-gplus gplus"></i></a></li>-->
+                </div>
+
+              </div><!-- end aboutme -->
+            </div><!-- end about-section -->
+          </div><!-- end col -->
+
+        </div>
+      </div>
+<div class="portfolio-popup hide">
+  <div class="portfolio-popup__close">
+
+  </div>
+  <div class="portfolio-popup__body">
+    <h2 class="portfolio-title"> Projects </h2>
+    <div class="portfolio-projects">
+      <div class="portfolio-item">
+        <p>
+          <a href="https://github.com/Dafnoss/61758-pixel-hunter"> Pixel Hunter </a>
+        </p>
+      </div>
+      <div class="portfolio-item">
+        <p>
+          <a href="https://dafnoss.github.io/sedona/index.html"> Sedona </a>
+        </p>
+      </div>
+      <div class="portfolio-item">
+        <p>
+          <a href="https://empirical-vial-203519.firebaseapp.com"> Mishka </a>
+        </p>
+      </div>
+      <div class="portfolio-item">
+        <p>
+          <a href="https://www.пятница72.рф/"> pyatnitsa72 </a>
+        </p>
+      </div>
+      <div class="portfolio-item">
+        <p>
+          <a href="https://dafnoss.github.io/keksosbooking/index.html"> Keksobooking </a>
+        </p>
+      </div>
+      <div class="portfolio-item">
+        <p>
+          <a href="https://dafnoss.github.io/photobook/index.html"> Photobook </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script >
+    const popupCross = document.querySelector(".portfolio-popup__close");
+    const poup = document.querySelector(".portfolio-popup");
+    const btn = document.querySelector(".border");
+
+    popupCross.addEventListener('click', function () {
+        poup.classList.add('hide');
+    });
+
+    btn.addEventListener(('click'), function () {
+        poup.classList.remove('hide')
+
+
+    })
+
+  </script>
+    </body>
+</html>
