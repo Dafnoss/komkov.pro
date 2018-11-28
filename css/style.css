@@ -832,7 +832,13 @@ body {
     margin-top: 75px;
 }
 
+
+
 a:link, a:visited, a:hover, a:active {
     color: white;
 
+}
+
+.portfolio-projects a {
+    display: block;
 }
