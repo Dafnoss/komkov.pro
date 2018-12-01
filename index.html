@@ -97,6 +97,7 @@
 
     </div>
 </div>
+<!--
 <div class="portfolio-popup hide">
     <div class="portfolio-popup__close">
 
@@ -140,21 +141,16 @@
     </div>
 </div>
 
-<script>
-    const popupCross = document.querySelector(".portfolio-popup__close");
-    const poup = document.querySelector(".portfolio-popup");
-    const btn = document.querySelector(".border");
+-->
+<div class="portfolio-choose hide">
+    <div class="portfolio-side portfolio-side--left">
+        <p class="portfolio-piccontent">Frontend</p>
+    </div>
+    <div class="portfolio-side portfolio-side--right">
+        <p class="portfolio-piccontent">Marketing</p>
+    </div>
+</div>
 
-    popupCross.addEventListener('click', function () {
-        poup.classList.add('hide');
-    });
-
-    btn.addEventListener(('click'), function () {
-        poup.classList.remove('hide')
-
-
-    })
-
-</script>
+<script src="scripts/script.js" type="text/javascript"></script>
 </body>
 </html>

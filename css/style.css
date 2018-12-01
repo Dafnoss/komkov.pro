@@ -842,3 +842,73 @@ a:link, a:visited, a:hover, a:active {
 .portfolio-projects a {
     display: block;
 }
+
+.portfolio-choose {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.portfolio-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    background-color: #062347;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.portfolio-side--right {
+    background-color: hotpink;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.portfolio-side--left {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.portfolio-sideHover {
+    transition: width 2s ease-in;
+    width:100%;
+    z-index: 3;
+    opacity: 1;
+}
+
+
+.portfolio-piccontent {
+    text-align: center;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+
+}
+
+.portfolio-popup__close {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    width: 40px;
+    height: 40px;
+    border: 5px transparent;
+    border-radius: 100%;
+    /*border: 1px solid black; */
+    background-image: url("../img/cross.svg");
+    background-size: contain ;
+}
+
+
