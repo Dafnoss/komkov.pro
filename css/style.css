@@ -500,7 +500,7 @@ body {
 @media (max-width: 575px) {
     .profile-section .profile-pic {
         width: 200px;
-        height: 250px;
+        height: 310px;
         -webkit-box-shadow: 0 15px 24px rgba(0, 0, 0, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3);
         box-shadow: 0 15px 24px rgba(0, 0, 0, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3);
         overflow: auto;
@@ -843,6 +843,7 @@ a:link, a:visited, a:hover, a:active {
     .portfolio-side--left,
     .portfolio-side--right {
         height: 50vh;
+
     }
 
     .portfolio-side--right {
@@ -910,7 +911,12 @@ new Block
     justify-content: center;
     width: 50%;
     height: 50vh;
+    background-position: center;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    text-align: center;
 }
+
 
 @media (max-width: 800px) {
     .project {
@@ -936,23 +942,31 @@ new Block
 }
 
 .portfolio-side--left .project:nth-child(1) {
-    background-color: #123EAB;
+    background-color: #062347;
+    background-image: url("../img/mishka.png");
 }
 
 .portfolio-side--left .project:nth-child(2) {
-    background-color: #2A4380;
+    background-color: #062347;
+    background-image: url("../img/sedona.jpg");
+    filter: hue-rotate(40deg);
 }
 
 .portfolio-side--left .project:nth-child(3) {
-    background-color: #466FD5;
+    background-color: #062347;
+    background-image: url("../img/pyatnitsa72.png");
+    filter: hue-rotate(-40deg);
 }
 
 .portfolio-side--left .project:nth-child(4) {
-    background-color: #06246F;
+    background-color: #062347;
+    background-image: url("../img/keksobooking.png");
+    filter: hue-rotate(60deg);
 }
 
 .project:hover{
-    background-color: #333333 !important;
+    background-color: black !important;
+    cursor: auto;
 }
 
 
@@ -968,6 +982,25 @@ new Block
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
+}
+
+.project-btn {
+    display: block;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    margin-left: 50%;
+    margin-top: 20px ;
+    transform: translate(-50%);
+    background-color: transparent !important;
+}
+
+
+.project-btn:hover {
+    background-color: white !important;
+    color: black;
 }
 
 
