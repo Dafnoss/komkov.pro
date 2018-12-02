@@ -915,7 +915,16 @@ new Block
     background-blend-mode: soft-light;
     background-size: cover;
     text-align: center;
+    font-size: 16px;
+    font-family: Roboto;
 }
+
+.portfolio-projects--marketing .project {
+    background-blend-mode: soft-light;
+    height: 100vh; /* change to 50% to show azoft*/
+}
+
+
 
 
 @media (max-width: 800px) {
@@ -926,19 +935,27 @@ new Block
 }
 
 .portfolio-side--right .project:nth-child(1) {
-    background-color: #992667;
+    background-color: darkred;
+    background-image: url("../img/utilex.jpg");
+
 }
 
 .portfolio-side--right .project:nth-child(2) {
-    background-color: #85004B;
+    background-color: darkred;
+    background-image: url("../img/pyatnitsa72.png");
+    filter: hue-rotate(40deg);
 }
 
 .portfolio-side--right .project:nth-child(3) {
-    background-color: #E6399B;
+    background-color: darkred;
+    background-image: url("../img/azoft.jpg");
+    filter: hue-rotate(-40deg);
 }
 
 .portfolio-side--right .project:nth-child(4) {
-    background-color: #E667AF;
+    background-color: darkred;
+    background-image: url("../img/finaple.jpg");
+    filter: hue-rotate(-60deg);
 }
 
 .portfolio-side--left .project:nth-child(1) {
@@ -954,18 +971,18 @@ new Block
 
 .portfolio-side--left .project:nth-child(3) {
     background-color: #062347;
-    background-image: url("../img/pyatnitsa72.png");
+    background-image: url("../img/Cryptaz.jpg");
     filter: hue-rotate(-40deg);
 }
 
 .portfolio-side--left .project:nth-child(4) {
     background-color: #062347;
-    background-image: url("../img/keksobooking.png");
+    background-image: url("../img/keksobooking.jpg");
     filter: hue-rotate(60deg);
 }
 
 .project:hover{
-    background-color: black !important;
+    background-image: none !important;
     cursor: auto;
 }
 
@@ -996,7 +1013,6 @@ new Block
     transform: translate(-50%);
     background-color: transparent !important;
 }
-
 
 .project-btn:hover {
     background-color: white !important;
